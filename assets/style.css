@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+body {
+  font-family: Sen, cursive;
+  min-height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  transition: all 1500ms ease-in-out;
+  background: #E3F2FD;
+}
+
+#app {
+  height: 90vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+footer div a {
+  position: relative;
+  text-decoration: none;
+}
+
+footer div a:hover::before {
+  /* background: linear-gradient(#ead6ee, #a0f1ea); */
+  opacity: .8;
+  top: -2px;
+  bottom: -2px;
+}
+
+.a-pagi::before, .a-sore::before, .a-malam::before {
+  content: " ";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  top: calc(100% - 8px);
+  transition: all 120ms ease-in-out;
+  z-index: -1;
+}
+
+.a-pagi:hover::before, .a-sore:hover::before, .a-malam:hover::before{
+  opacity: .8;
+  top: -2px;
+  bottom: -2px;
+}
+
+.a-pagi::before {
+  background: #eeff41;
+}
+
+.a-sore::before {
+  background: #e3f2fd;
+}
+
+.a-malam::before {
+  background: #607d8b;
+}
